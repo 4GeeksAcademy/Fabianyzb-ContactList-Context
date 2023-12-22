@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
+import rigoImage from "../../img/rigo-baby.jpg";
 
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
@@ -17,6 +18,7 @@ export const Demo = () => {
 							key={index}
 							className="list-group-item d-flex justify-content-between"
 							style={{ background: item.background }}>
+							<img className="rounded-circle img-fluid" src="https://picsum.photos/id/237/120/120"/>
 							<Link to={"/single/" + index}>
 								<span>Link to: {item.title}</span>
 							</Link>

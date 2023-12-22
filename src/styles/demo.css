@@ -1,0 +1,11 @@
+.delete:hover {
+    cursor: pointer;
+}
+
+p {
+    color: gray;
+}
+
+.pen {
+    color: black;
+}
